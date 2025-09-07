@@ -27,7 +27,9 @@ namespace MedicalSystemApi.Models
         public char Gender { get; set; }
         
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        
+
+      
+
         // Navigation properties (Lazy Loading)
         public virtual ICollection<MedicalRecord> MedicalRecords { get; set; } = new List<MedicalRecord>();
         public virtual ICollection<Examination> Examinations { get; set; } = new List<Examination>();
