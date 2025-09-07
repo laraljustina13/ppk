@@ -18,13 +18,6 @@ namespace MedicalSystemApi.Services
         }
 
 
-
-
-
-
-
-
-
         public async Task<string> UploadFileAsync(IFormFile file, string folderName)
         {
             _logger.LogInformation("=== STORAGE UPLOAD STARTED ===");
